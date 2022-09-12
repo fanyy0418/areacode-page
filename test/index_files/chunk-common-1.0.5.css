@@ -1,0 +1,969 @@
+.app-container {
+    height: 100%;
+    background-color: #f5f6fa
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%
+}
+
+.block {
+    height: 1.6rem;
+    line-height: 1.6rem;
+    padding: 0 .26667rem;
+    font-size: .42667rem;
+    background-color: #fff;
+    border-radius: .16rem
+}
+
+.overlayBg {
+    background-color: #000 !important
+}
+
+* {
+    box-sizing: border-box
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    align-items: center;
+    height: -webkit-fill-available;
+    height: -moz-available;
+    height: fill-available;
+    width: 100%
+}
+
+#头部固定，内容滚动工具 .flex-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: -webkit-fill-available
+}
+
+.flex-body {
+    flex: 1;
+    overflow-y: scroll
+}
+
+.flex-footer,
+.flex-header {
+    flex: 0 0 auto
+}
+
+.flex-box {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto
+}
+
+.flex-box .flex-content {
+    flex: 1;
+    padding: 0 .53333rem
+}
+
+.flex-box .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%
+}
+
+.flex-box .block {
+    height: 1.6rem;
+    line-height: 1.6rem;
+    padding: 0 .26667rem;
+    font-size: .42667rem;
+    background-color: #fff;
+    border-radius: .16rem
+}
+
+.flex-box .van-overlay {
+    background-color: rgba(0, 0, 0, .9) !important;
+    z-index: 11
+}
+
+.base-wrapper {
+    position: relative
+}
+
+.base-wrapper .van-overlay {
+    background-color: rgba(0, 0, 0, .7) !important
+}
+
+.base-wrapper .travalBox {
+    margin-top: .42667rem;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: .18667rem;
+    padding: .26667rem
+}
+
+.base-wrapper .travalBox .eyeIcon {
+    height: .42667rem;
+    width: .42667rem;
+    margin-left: .26667rem
+}
+
+.base-wrapper .travalBox-top {
+    padding: 0 .13333rem;
+    border-bottom: .02667rem solid #f5f5f5
+}
+
+.base-wrapper .travalBox-top .name {
+    font-size: .64rem;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #222
+}
+
+.base-wrapper .travalBox-top .card {
+    font-size: .42667rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #888;
+    margin: .21333rem 0;
+    display: flex;
+    align-items: center
+}
+
+.base-wrapper .travalBox .travalBox-bottom {
+    margin-top: .37333rem;
+    align-items: center;
+    min-height: 2.66667rem;
+    height: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%
+}
+
+.base-wrapper .travalBox .travalBox-bottom .travalBox-left {
+    height: 100%;
+    background: linear-gradient(225deg, #92e97f, #31c564);
+    border-radius: .13333rem;
+    margin-right: .21333rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: .26667rem 0
+}
+
+.base-wrapper .travalBox .travalBox-bottom .travalBox-left .shengyu {
+    font-size: .32rem;
+    font-family: PingFang SC;
+    color: #f4fff3
+}
+
+.base-wrapper .travalBox .travalBox-bottom .information2 {
+    height: 100%;
+    background: rgba(43, 165, 228, .05);
+    border-radius: .13333rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #2ba6e4;
+    padding: .26667rem 0;
+    margin-right: .21333rem
+}
+
+.base-wrapper .travalBox .travalBox-bottom .information3 {
+    background-color: hsla(0, 0%, 86.7%, .4)
+}
+
+.base-wrapper .travalBox .travalBox-bottom .information4 {
+    background-color: #e22529
+}
+
+.base-wrapper .travalBox .travalBox-bottom .travalBox-right {
+    height: 100%;
+    background: rgba(43, 165, 228, .05);
+    border-radius: .13333rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #2ba6e4;
+    padding: .26667rem 0
+}
+
+.base-wrapper .travalBox .travalBox-bottom .travalBox-right2 {
+    background-color: hsla(0, 0%, 86.7%, .4)
+}
+
+.base-wrapper .travalBox .lodding-text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center
+}
+
+.base-wrapper .travalBox .text-loading {
+    font-size: .42667rem;
+    font-weight: 700
+}
+
+.base-wrapper .travalBox .top-info {
+    font-size: .42667rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #f4fff3
+}
+
+.base-wrapper .travalBox .yin {
+    font-size: .42667rem;
+    font-family: Source Han Sans CN;
+    font-weight: 700;
+    color: #f4fff3;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100%
+}
+
+.base-wrapper .travalBox .yin .result {
+    display: flex;
+    flex-direction: column
+}
+
+.base-wrapper .travalBox .yin .result .result-top {
+    padding-top: .29333rem;
+    text-align: center
+}
+
+.base-wrapper .travalBox .yin .result .result-bottom {
+    font-size: .53333rem;
+    text-align: center;
+    padding-bottom: .29333rem
+}
+
+.base-wrapper .travalBox .common-label {
+    font-size: .48rem;
+    font-family: Source Han Sans CN;
+    font-weight: 700;
+    color: #4d4d4d
+}
+
+.base-wrapper .travalBox .van-icon-replay {
+    padding-left: .10667rem;
+    color: #e19426
+}
+
+.base-wrapper .travalBox .time-out {
+    font-size: .42667rem;
+    color: #e19426;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    display: flex;
+    align-items: center
+}
+
+.base-wrapper .travalBox .span-blue {
+    font-size: .53333rem;
+    font-family: PingFangSC-Medium, PingFang SC;
+    color: #3cbaf9;
+    font-weight: 700
+}
+
+.base-wrapper .travalBox .span-green {
+    font-size: .42667rem;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: #01b731;
+    display: flex;
+    align-items: center
+}
+
+.base-wrapper .travalBox .span-green .cx {
+    width: .37333rem;
+    height: .37333rem;
+    margin-right: .16rem
+}
+
+.base-wrapper .travalBox .hour {
+    font-size: 1.44rem
+}
+
+.base-wrapper .travalBox .hour,
+.base-wrapper .travalBox .hour2 {
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 700;
+    padding: 0 .05333rem
+}
+
+.base-wrapper .travalBox .hour2 {
+    font-size: .48rem
+}
+
+.base-wrapper .message {
+    margin-top: .42667rem;
+    padding: .13333rem .26667rem;
+    background: #fff;
+    border-radius: .18667rem;
+    display: grid;
+    grid-template-columns: auto 50%;
+    height: 100%;
+    justify-content: space-between
+}
+
+.base-wrapper .message .message-left {
+    padding: .26667rem 0 .26667rem .48rem
+}
+
+.base-wrapper .message .message-left,
+.base-wrapper .message .message-right,
+.base-wrapper .message .message-right2 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start
+}
+
+.base-wrapper .message .label {
+    font-size: .42667rem;
+    font-weight: 700
+}
+
+.base-wrapper .message .bgsj2 {
+    white-space: nowrap;
+    margin: .26667rem auto !important;
+    border: .02667rem solid #3cbaf9;
+    color: #3cbaf9;
+    border-radius: .4rem;
+    padding: .10667rem .26667rem;
+    text-align: center;
+    font-size: .42667rem
+}
+
+.base-wrapper .message .desc {
+    font-size: .37333rem
+}
+
+.base-wrapper .message .desc .bgsj {
+    padding: 0 .16rem;
+    white-space: nowrap
+}
+
+.base-wrapper .message .message-right,
+.base-wrapper .message .message-right2 {
+    color: #3cbaf9;
+    font-weight: 700;
+    justify-content: space-around;
+    align-items: center;
+    background: rgba(43, 165, 228, .05);
+    border-radius: .10667rem;
+    white-space: nowrap;
+    padding: .26667rem
+}
+
+.base-wrapper .message .message-right2 .blue-hour,
+.base-wrapper .message .message-right .blue-hour {
+    font-size: .64rem
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 6.93333rem
+}
+
+.container .area {
+    position: absolute;
+    width: 100%;
+    top: 1.6rem;
+    font-size: .64rem;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #fff;
+    line-height: .90667rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2
+}
+
+.container .mainBox {
+    height: 5.86667rem
+}
+
+.container .mainBox-top {
+    height: 4.26667rem
+}
+
+.container .mainBox-bottom {
+    height: 1.6rem;
+    border-bottom-right-radius: 60%;
+    border-bottom-left-radius: 60%
+}
+
+.container .green {
+    background-color: #01b72f
+}
+
+.container .yellow {
+    background-color: #f9bb06
+}
+
+.container .red {
+    background-color: #f54838
+}
+
+.container .cartoon {
+    height: 6.93333rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: .53333rem
+}
+
+.message-wrapper {
+    margin-top: .34667rem;
+    height: auto
+}
+
+.message-wrapper .title {
+    font-size: .48rem;
+    color: #000;
+    text-indent: .10667rem
+}
+
+.message-wrapper .messageList {
+    margin-top: .21333rem;
+    background: #fff;
+    box-shadow: 0 .10667rem .21333rem 0 rgba(0, 0, 0, .05);
+    border-radius: .32rem;
+    padding: .64rem 0 .58667rem 0
+}
+
+.message-wrapper .messageList .van-cell__title {
+    font-size: .4rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #222
+}
+
+.message-wrapper .messageList .van-cell__value {
+    width: 4.90667rem;
+    flex: none;
+    font-size: .4rem
+}
+
+.message-wrapper .messageList .huang .van-cell__value {
+    color: #f4bc11
+}
+
+.message-wrapper .messageList .hong .van-cell__value {
+    color: #f54838
+}
+
+.message-wrapper .messageList .yc {
+    font-size: .4rem;
+    color: #f54838
+}
+
+.querylist-card {
+    margin-top: -1.86667rem;
+    width: 100%;
+    padding: 0 .53333rem
+}
+
+.querylist-card .list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 2.8rem;
+    background: #fff;
+    box-shadow: 0 .02667rem .29333rem 0 hsla(0, 0%, 80%, .3);
+    border-radius: .10667rem
+}
+
+.querylist-card .list-date {
+    height: .74667rem;
+    font-size: .53333rem;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #6c6c6c;
+    line-height: .74667rem
+}
+
+.querylist-card .list-time {
+    color: #040404;
+    font-size: 1.38667rem;
+    font-weight: 700;
+    width: 100%;
+    height: auto
+}
+
+.time {
+    height: 1.38667rem;
+    width: 100%;
+    font-family: PingFangSC-Bold;
+    text-align: center;
+    overflow: hidden;
+    font-size: 1.38667rem;
+    color: #000;
+    letter-spacing: .18667rem
+}
+
+.time,
+.time ul.numbers {
+    background-color: #fff;
+    border-radius: .13333rem
+}
+
+.time ul.numbers {
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    transition: all .5s ease;
+    margin: 0
+}
+
+.time ul.numbers li {
+    text-align: center;
+    font-weight: 800
+}
+
+.time .icon,
+.time ul.numbers li {
+    height: 1.38667rem;
+    line-height: 1.38667rem
+}
+
+.time .icon {
+    display: inline-block;
+    width: .53333rem;
+    vertical-align: top
+}
+
+.button-group {
+    margin: .42667rem 0;
+    padding: 0 .93333rem
+}
+
+.button-group .van-button--large {
+    height: 1.17333rem
+}
+
+.button-group .van-button__text {
+    font-size: .48rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #2bc150
+}
+
+.button-group #launch-btn {
+    color: #07c160;
+    border-radius: 26.64rem;
+    width: 100%;
+    height: 1.28rem;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.car-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.32rem;
+    height: 1.01333rem;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQcAAABxCAMAAADveZb9AAABF1BMVEUAAAABVSMATwABUhwAWBkNVRwKVSD0+//0+v7////0+v70+v7+///x///0+v30+v70+v/0+v/0+v70+/72+v/0+f8AXCD0+v70+/70+f71+v4MVBjz+f/0///////z+v/0+v70+v71+/71+v/0+v71+/70+f/////0+v71+v/1+v/0+//39//0+//1+v/0+v7z+v30+//z+f/0+v70+v30+v31+v31+v30+v30+v30+f3z+f3z+f31+//0+f/1+f/1/P/1/P/2+v/w+P/0+v7y+P/4+P/z+//z///0+v70+v70+v70+//r///0+v7t///0+v70+v70+v71+//1+v71+//0+v59pIjz+fvX5eHJ29Tj7e2YvKYZazHnAAAAXXRSTlMABQEOChIYOs0C+PwFEaTcb13IsRosB+bitsMVKBcKatXxqWHYrVkI9DNlRR12MLqZc1bfoJyWko+MiIWBflJPS0g2I70lID8U6cDrQgz+Du/R7Xrze/YtwXZflTkyAt+NAAAHM0lEQVR42uxTW0sbYRBt1VgKWiKYvJjog2CIplKl93srrX1w2YeQ//9X+u2ZGx89jUIiSKdnd+ebOXNmdj2YRx02gMfAcDjcepoCjwUbgPkQNmxtJfHBrSA+wIbNnTQQI9yH2gb4MBHhBDcerREnwqLyfsCYGCBtyi8nJ3TPcvgcH1Ej6n8HsWFzkgg77kP977BZcJgJExhR+aA29A4Pm6YpobuQdjeGogSDQ67IBF4guNSpQuiOIEApDUIvZXSHjCCNmVgBIDORBf8gwD8SRrgP8e/Q67VN0zZt2x1Ag1TIbrpjEIXSx8SeQS6nixtdEG1QPolgLPRWIsTCWAdGeqK2bdqEFgoXegf3Hz6oDQe7u7tFVGI5LWjZdkmLtrKR4MCca1tNfTSkAWFJirFqAVW0shNBCmV0FiIX4zZequHffEiGRn2ofxYHB7+ygfjQKz6Ms6GpfdCfxfb+/ngf6DQlL1EoVDiQocAxDgqFzCNaKgJdqVtAAyhjzGXxcgSc0IVSiXhcZHM6bYu8ildXPtjPYlvbgRkiBZeuVT8jxJo/Zof6MEuHtvZBfhbbP9NhTH24SocZ9eFHOlxRH0b5QH0YjAYFo9GgXJYgjlBKtE4QyJADI38waevAGI1bCr1N4QQKh5SgEVHgjM312pEKYjo+LmruA3A+uCvOaco1d1/qQ5ylCcftOu7DuWKKGAg+WlxACk5MI1kR05Xa1IdpPlAfvucD9eFJPvz3YYkP1zVurv8NLPs7qA83t+OMs1W2Es5WF/IO71IfzvKB+vAtH6gPX/OB+vAlH6gPn/OB+nCZD9SHk8uTbKA+7C3Fid0okDgYaUVNcoKw3sPDqSVjZIp9GfXheG/vGFcBohxGWRcVAs5jkSCgjMqnqk0YQA19TIbYW4hRxqr6lZJDg1wybftneCM+g/tgOC3X3XCqETOWEcXasOb91IfT+8cRnocD6sNRPlAf+kf90uqXAwE3LqQIYOTuW0syl6oeWX3YhlBV0wUmABnoGvE9po0tCHKF1t8ZCVr2Bjzch4eKi/59gfpwkQ/Uh+f5QH2Yz+eLuWFRpUEErSXCAn2tJIJGEiQorZGCccUChzMBbBOtvUwzXxGa6p2xCrkTuob68CkfqA8f84H68CEfqA/v84H68C4fqA9v84H68CYfqA+v84H68CIfqA+v8oH68DIfqA/P8uF3e+e20kgQhOF2ckAiGEggB71RiTA34oKvsDeuILMiiYm+/3NszT9d/U9nijAXrutO5+/u6jqlJnwkK3uxq8nh5vz8xh/oRhYun0MNDvO+EWJSG6pLG5iOY46LHs/prKKIC9sXmZPTeGKVRJUP9e02h5puZXmHqVgs4GBZRd7tpbNgedG3emO1SdocbtOTyWGankwOy+lU9hQ2XGVyuYSDGDczfiPHBPwQ+aoOguMT7NI+5LRL7bIUymzHNBz4jKoMR/oGblyVsTmkJ5PDfXoyOfz8nrqH/TsyOfz6X/XGu1U3ZXK4SE8mh8nFBNsvNczB1Xy0NKbLLqPNeKFZZRfnsN9qtRrpNZbNIT3tc+iVHN5Ok5PJYXqanMx/x/rjd6krWWLLDUMxYhuWGraECexiMhYTqGpozGOZ4gtx+xU2zIFX1DnMlMPdVXIyOexWpa5kiYXPmyFd3wrDKpMwcVUbtMIiaxRiZuNaHPNRxkRapqscOIjAQX9gbFbj8UrOGCcsJJmSjUPHCFcwsIzDPE6iK4fd7BVxShjLOh+rea1wLgRPdzjkEP3Fe5yaLA6Xw+1DanLmD4zNavHv9bD4QjnzPwQZvs/ni89ci3mbHhHD4LebvzjcbbydqOLsL8ZmPE9L5BB9MYbbx7QUc+AHYvj2lJTIYe8D8fHwUql4oUODw4ue0R7HsAWTRXniESFbIIqGIMmU93Gaj+JEWqo+xFlfDIDYPRXFtagQicFdZmA0hkUGFkaj0MACKrjF8wFnIMAKebHoYo1PQwIum2hQgM83RS8M0HuPQx3E9joheQ4EQQ4C4vX1NZedi4XyRlQ54mqEKk49GbJwEFZF5nWWdnA2AuQRYyPUPIeFGXAZaRlWo/oTnWv8CUEQu8c8X+dr7BxbTCRk17grR31Wcq0ijOfobLjoYIkD2SFSv1SUNN7XmiUMp994BTkY34zhx2T0aVqPvrPIgR8IDwIk7opREnIWiF4NxOa9OEtABgcFEUhsJ2dfq+fnFj1tWmBbTXGHQYCEoNi9L1cvo+fuihwiECQBFJ3UpWgw6In6/Zk7BEJIAEUHYVyCQsBADiYIkACL7mkwUAzC4cSZIEgCKDqqXk8xNDjEvwdDUXSQRw8KGMDBBIGPBEh0WX2PgRxMECWKzsLoQzNgAAcbBFF0WKBADlRGEkTRSRozkVIgB5MEWXRTJ0GZs0AoiWSUZc4EkRaKTORMZemgyCByMEh0nEamDMjBRpGSnHNHFAFD0jTcUUcdddQh/QEfLFL/MovapQAAAABJRU5ErkJggg==) no-repeat;
+    background-size: 100% 100%
+}
+
+.car-wrapper .card-car {
+    height: 1.01333rem;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.car-wrapper .card-car img {
+    width: .37333rem;
+    height: .4rem;
+    margin-right: .13333rem
+}
+
+.car-wrapper .card-car .btn-car {
+    height: .4rem;
+    line-height: .4rem;
+    font-size: .34667rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #01b731
+}
+
+.dialog-nucleice {
+    width: 8.93333rem !important
+}
+
+.dialog-nucleice,
+.wapper-hs {
+    background: #fff;
+    border-radius: .26667rem
+}
+
+.wapper-hs {
+    width: 8.93333rem
+}
+
+.wapper-hs .title {
+    display: flex;
+    justify-content: center;
+    padding: .45333rem 0;
+    border-bottom: .02667rem solid #def1fa;
+    font-size: .50667rem;
+    font-family: Source Han Sans CN;
+    font-weight: 700;
+    color: #4d4d4d
+}
+
+.wapper-hs .message-list {
+    padding: 0 .82667rem
+}
+
+.wapper-hs .message-list .list {
+    display: flex;
+    margin-top: .42667rem
+}
+
+.wapper-hs .message-list .list .list-left {
+    width: 2.13333rem;
+    font-size: .37333rem;
+    font-family: Source Han Sans CN;
+    font-weight: 600;
+    color: #4d4d4d
+}
+
+.wapper-hs .message-list .list .list-right {
+    flex: 1;
+    font-size: .37333rem;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #4d4d4d;
+    text-align: right
+}
+
+.wapper-hs .message-list .list .list-blue {
+    font-size: .42667rem;
+    font-family: Source Han Sans CN;
+    font-weight: 700;
+    color: #01b731
+}
+
+.wapper-hs .message-list .list .list-red {
+    font-size: .42667rem;
+    font-family: Source Han Sans CN;
+    font-weight: 700;
+    color: #e22529
+}
+
+.wapper-hs .btn-know {
+    width: 3.76rem;
+    height: .96rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .02667rem solid #2ba6e4;
+    border-radius: .48rem;
+    color: #2ba6e4;
+    font-weight: 600;
+    font-size: .42667rem;
+    font-family: Source Han Sans CN;
+    margin: .8rem auto .45333rem auto
+}
+
+.wapper-loading {
+    height: 5.86667rem;
+    width: 8.93333rem;
+    background: #fff;
+    border-radius: .26667rem;
+    display: flex;
+    flex-direction: column
+}
+
+.wapper-loading .title {
+    display: flex;
+    justify-content: center;
+    padding: .45333rem 0;
+    border-bottom: .02667rem solid #def1fa;
+    font-size: .50667rem;
+    font-family: Source Han Sans CN;
+    font-weight: 700;
+    color: #4d4d4d
+}
+
+.wapper-loading .content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.wapper-hs-no {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 8.93333rem;
+    background: #fff;
+    border-radius: .26667rem;
+    padding: .45333rem 0 .50667rem 0
+}
+
+.wapper-hs-no .title {
+    font-size: .50667rem;
+    font-family: Source Han Sans CN;
+    font-weight: 700;
+    color: #4d4d4d
+}
+
+.wapper-hs-no .middle {
+    margin-top: .53333rem;
+    margin-bottom: .61333rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center
+}
+
+.wapper-hs-no .middle .img {
+    width: 1.22667rem;
+    height: 1.36rem
+}
+
+.wapper-hs-no .middle .text {
+    margin-top: .26667rem;
+    font-weight: 700
+}
+
+.wapper-hs-no .btn-know,
+.wapper-hs-no .middle .text {
+    font-size: .42667rem;
+    font-family: Source Han Sans CN;
+    color: #2ba6e4
+}
+
+.wapper-hs-no .btn-know {
+    width: 3.76rem;
+    height: .96rem;
+    border: .02667rem solid #2ba6e4;
+    border-radius: .48rem;
+    font-weight: 600
+}
+
+.wapper-hs-no .btn-know,
+.wrapper-over {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.wrapper-over {
+    height: 100%
+}
+
+.trave-wrapper {
+    margin: .42667rem 0
+}
+
+.time-wrapper .van-dialog__header {
+    color: #000;
+    font-weight: 700
+}
+
+.time-wrapper .van-dialog__confirm {
+    color: #405ba4;
+    font-weight: 700
+}
+
+.time-wrapper .van-dialog__message {
+    font-size: .42667rem
+}
+
+.ban-contain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.illgel-loading {
+    width: 8.93333rem;
+    background: #fff;
+    border-radius: .26667rem;
+    display: flex;
+    flex-direction: column
+}
+
+.illgel-loading .title {
+    display: flex;
+    justify-content: center;
+    padding: .53333rem 0 .53333rem 0;
+    font-size: .50667rem;
+    font-family: Source Han Sans CN;
+    font-weight: 700;
+    color: #4d4d4d
+}
+
+.illgel-loading .content {
+    padding: 0 .8rem;
+    font-size: .42667rem;
+    font-family: Source Han Sans CN;
+    color: #444;
+    line-height: .69333rem
+}
+
+.illgel-loading .btn-know {
+    width: 3.76rem;
+    height: .96rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .02667rem solid #2ba6e4;
+    border-radius: .48rem;
+    color: #2ba6e4;
+    font-weight: 700;
+    font-size: .42667rem;
+    font-family: Source Han Sans CN;
+    margin: .53333rem auto
+}
+
+.van-popup--center {
+    top: 45% !important
+}
+
+.bottom-card-wrapper[data-v-18268544] {
+    margin-top: .42667rem;
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    background: #fff;
+    border-radius: .18667rem;
+    padding: .37333rem 0 .48rem
+}
+
+.bottom-card-wrapper .item[data-v-18268544] {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+
+.bottom-card-wrapper .item .img[data-v-18268544] {
+    width: .88rem;
+    height: .88rem
+}
+
+.bottom-card-wrapper .item .text[data-v-18268544] {
+    margin-top: .18667rem;
+    font-size: .32rem;
+    font-family: PingFang SC;
+    font-weight: 700;
+    color: #4d4d4d
+}
+
+.bottom-card-wrapper .itemWidth50[data-v-18268544] {
+    flex: 0 0 50%
+}
+
+.bottom-card-wrapper .item[data-v-18268544]:after {
+    z-index: 1;
+    position: absolute;
+    content: " ";
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    width: .02667rem;
+    background: linear-gradient(0deg, #f0f0f0, #f0f0f0);
+    height: 1.17333rem
+}
+
+.bottom-card-wrapper .item[data-v-18268544]:last-child:after {
+    display: none
+}
+
+.page-jump-wrapper[data-v-1722de40] {
+    position: relative;
+    z-index: 2
+}
+
+wx-open-launch-weapp[data-v-1722de40] {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%
+}
+
+.bottom-card-wrapper[data-v-1722de40] {
+    margin-top: .42667rem;
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    background: #fff;
+    border-radius: .18667rem;
+    padding: .37333rem 0 .48rem
+}
+
+.btnsItem[data-v-1722de40] {
+    display: inline-block;
+    flex: 1
+}
+
+.itemWidth50[data-v-1722de40] {
+    flex: 0 0 50%
+}
+
+.item[data-v-1722de40] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+
+.img[data-v-1722de40] {
+    width: .88rem;
+    height: .88rem
+}
+
+.text[data-v-1722de40] {
+    margin-top: .18667rem;
+    font-size: .32rem;
+    font-family: PingFang SC;
+    font-weight: 700;
+    color: #4d4d4d
+}
+
+.item[data-v-1722de40]:first-child:after,
+.item[data-v-1722de40]:nth-child(2):after {
+    z-index: 1;
+    position: absolute;
+    content: " ";
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    width: .02667rem;
+    background: linear-gradient(0deg, #f0f0f0, #f0f0f0);
+    height: 1.17333rem
+}
